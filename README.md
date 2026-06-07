@@ -1,4 +1,4 @@
-# Trabalho Computacional 02 - Construção e Análise de Algoritmos 2025.1
+# Trabalho Computacional 02 - Construção e Análise de Algoritmos 2026.1
 ## Instituto Federal de Educação, Ciência e Tecnologia do Ceará (IFCE) - Campus Tianguá
 ## Bacharelado em Ciência da Computação
 ## Equipe 04

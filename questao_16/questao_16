@@ -1,0 +1,118 @@
+class Node:
+    def __init__(self, val, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+# ============================================================
+# a) Número de nós em uma árvore binária
+# ============================================================
+
+def contar_nos_recursivo(raiz):
+    """
+    Complexidade de tempo: O(n), onde n é o número de nós,
+    pois cada nó é visitado exatamente uma vez.
+    Complexidade de espaço: O(h), onde h é a altura da árvore,
+    devido à pilha de chamadas recursivas (pior caso O(n) se a
+    árvore for degenerada, ou seja, uma lista encadeada).
+    """
+    if raiz is None:
+        return 0
+    return 1 + contar_nos_recursivo(raiz.left) + contar_nos_recursivo(raiz.right)
+
+
+def contar_nos_iterativo(raiz):
+    """
+    Complexidade de tempo: O(n) - cada nó é colocado e retirado
+    da pilha exatamente uma vez.
+    Complexidade de espaço: O(h) no pior caso (pilha explícita
+    armazena no máximo a quantidade de nós de um caminho mais
+    o número de filhos visitados).
+    """
+    if raiz is None:
+        return 0
+    pilha = [raiz]
+    count = 0
+    while pilha:
+        no = pilha.pop()
+        count += 1
+        if no.left:
+            pilha.append(no.left)
+        if no.right:
+            pilha.append(no.right)
+    return count
+
+
+# ============================================================
+# b) Soma dos conteúdos de todos os nós
+# ============================================================
+
+def soma_nos_recursivo(raiz):
+    if raiz is None:
+        return 0
+    return raiz.val + soma_nos_recursivo(raiz.left) + soma_nos_recursivo(raiz.right)
+
+
+def soma_nos_iterativo(raiz):
+    if raiz is None:
+        return 0
+    pilha = [raiz]
+    soma = 0
+    while pilha:
+        no = pilha.pop()
+        soma += no.val
+        if no.left:
+            pilha.append(no.left)
+        if no.right:
+            pilha.append(no.right)
+    return soma
+
+
+# ============================================================
+# c) Profundidade (altura) de uma árvore binária
+# ============================================================
+
+def profundidade_recursivo(raiz):
+    if raiz is None:
+        return 0
+    return 1 + max(profundidade_recursivo(raiz.left), profundidade_recursivo(raiz.right))
+
+
+def profundidade_iterativo(raiz):
+    if raiz is None:
+        return 0
+    pilha = [(raiz, 1)]
+    profundidade_max = 0
+    while pilha:
+        no, prof = pilha.pop()
+        profundidade_max = max(profundidade_max, prof)
+        if no.left:
+            pilha.append((no.left, prof + 1))
+        if no.right:
+            pilha.append((no.right, prof + 1))
+    return profundidade_max
+
+
+# ============================================================
+# Teste
+# ============================================================
+if __name__ == "__main__":
+    #        1
+    #       / \
+    #      2   3
+    #     / \
+    #    4   5
+    arvore = Node(1, Node(2, Node(4), Node(5)), Node(3))
+
+    print("--- a) Número de nós ---")
+    print("Recursivo: ", contar_nos_recursivo(arvore))
+    print("Iterativo: ", contar_nos_iterativo(arvore))
+
+    print("\n--- b) Soma dos nós ---")
+    print("Recursivo: ", soma_nos_recursivo(arvore))
+    print("Iterativo: ", soma_nos_iterativo(arvore))
+
+    print("\n--- c) Profundidade ---")
+    print("Recursivo: ", profundidade_recursivo(arvore))
+    print("Iterativo: ", profundidade_iterativo(arvore))

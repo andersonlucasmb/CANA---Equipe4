@@ -12,7 +12,7 @@ Este repositório contém as soluções do Trabalho Computacional 02 da discipli
 ## Membros da equipe
 
 * Anderson Lucas Moreira
-* Nome completo 2
+* Gustavo Carvalho Cunha
 * Nome completo 3
 * Nome completo 4
 * Nome completo 5

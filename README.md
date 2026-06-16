@@ -13,7 +13,7 @@ Este repositório contém as soluções do Trabalho Computacional 02 da discipli
 
 * Anderson Lucas Moreira
 * Gustavo Carvalho Cunha
-* Nome completo 3
+* Heloísa de Araújo Lima
 * Nome completo 4
 * Nome completo 5
 * Nome completo 6

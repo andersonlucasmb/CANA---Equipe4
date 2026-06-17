@@ -31,6 +31,7 @@ pip install matplotlib
 python questao_A.py
 python questao_B.py
 python questao_13.py
+python questao_16.py
 ```
 
 ## Contato

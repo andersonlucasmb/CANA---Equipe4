@@ -65,12 +65,11 @@ class LinkedList:
         self.from_array(array)
 
 
-# --- main ---
+
 import random
 
 ll = LinkedList()
 
-print("Inserindo 10 valores aleatórios...")
 for _ in range(10):
     value = random.randint(0, 99)
     ll.insert(value)

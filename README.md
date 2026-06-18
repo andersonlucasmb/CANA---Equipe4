@@ -15,7 +15,7 @@ Este repositório contém as soluções do Trabalho Computacional 02 da discipli
 * Gustavo Carvalho Cunha
 * Heloísa de Araújo Lima
 * João Victor Uchôa dos Santos
-* Nome completo 5
+* Allyson Keveny Medeiros Félix
 * Nome completo 6
 
 ## Requisitos ou Instruções

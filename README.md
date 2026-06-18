@@ -37,7 +37,7 @@ python questao_16.py
 
 Se houver um erro ou outra melhoria que você gostaria de relatar ou solicitar, incentivamos você a contribuir.
 
-Por favor, sinta-se à vontade para entrar em contato conosco para qualquer dúvida: [![Gmail Badge](https://img.shields.io/badge/-email@ifce.edu.br-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:email@ifce.edu.br)](mailto:email@ifce.edu.br)
+Por favor, sinta-se à vontade para entrar em contato conosco para qualquer dúvida: [![Gmail Badge](https://img.shields.io/badge/-email@ifce.edu.br-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:email@ifce.edu.br)](mailto:anderson.lucas.moreira08@ifce.edu.br)
 
 ## Referências
 

@@ -4,7 +4,7 @@
 ## Equipe 04
 
 <p align="center">
-Este repositório contém as soluções do Trabalho Computacional 02 da disciplina de Construção e Análise de Algoritmos 2025.1.
+Este repositório contém as soluções do Trabalho Computacional 02 da disciplina de Construção e Análise de Algoritmos 2026.1.
 </p>
 
 <div align="justify">
